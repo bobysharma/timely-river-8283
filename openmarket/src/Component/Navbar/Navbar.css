@@ -1,0 +1,35 @@
+ .main-div{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    text-decoration: none;
+    gap:20px;
+    text-align: center;
+    font-size: 20px;
+    justify-content: center;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+ } 
+ .imgsection>img{
+    width: 200px;
+    flex: 2;
+ }
+ .mid-sectionnavbar{
+    flex:7;
+    gap: 20px;
+     
+ }
+ .mid-sectionnavbar>Box>mid-link{
+    text-decoration: none;
+ }
+.right-sectionnavbar{
+    flex: 2;
+    gap: 20px;
+}
+.women-mid:hover .woment-innerdiv{
+display: block;
+}
+
+.woment-innerdiv{
+    display: none;
+}
