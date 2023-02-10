@@ -3,8 +3,7 @@ import { Link, NavLink } from "react-router-dom";
 import "./Navbar.css"
  
 import { useState } from "react";
-import Women from "./Women";
-import Men from "./Men";
+
 const HoverAreaData = {
   "Holiday Gifts": [
       ["Holiday Gifts: Get Inspired", "Holiday Decor", "Stocking Stuffers", "Beauty Gifts", "Cozy Gifts", "Toys & Games", "Holiday Pajamas & Slippers", "UGG Shop", "Make it Pop | Pop in @ForeignBazar"],
@@ -73,9 +72,9 @@ const links2=[
 ]
 
 const Navbar=()=>{
-  const[show ,setShow]=useState(true)
-  return (<>  <Box className="main-div"  >
-    <Box className="imgsection">
+  
+  return (<>  <Box className="main-div" position="fixed" zIndex={2}  >
+    <Box className="imgsection" >
       <Image src="https://i.ibb.co/X8LJVX1/openlogo.png" alt="Logo" />
     </Box>
     <Flex className="mid-sectionnavbar">
@@ -94,14 +93,9 @@ const Navbar=()=>{
     </Flex>
   </Box>
 
-  <Flex style={{width:"80%",margin:"auto",gap:"10px"}}>
-
-  <NavLink style={({isActive})=>(isActive?{color:"black",borderBottom:"1px solid yellow",textDecoration:"None"}:{color:"#AF99A4"})} onClick={()=>alert("hello")}>Men</NavLink>
-  <NavLink style={({isActive})=>(isActive?{color:"black"}:{color:"#AF99A4"})} onClick={()=>alert("hello")}>WomenMen</NavLink>
-  </Flex>
-  {show?<Women />:<Men />}
-    <Divider />  
-    </>
+    
+  
+      </>
 
               
   )                
